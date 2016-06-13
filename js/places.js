@@ -22,7 +22,15 @@ $(document).ready(function() {
 
     $("#show-place").show();
     $("ul#show-list").append("<li><span class='place'>" + vietnamPlaces.placeIveBeen() + "</span></li>");
-
-
   });
+$("button#oregon-button").click(function(event) {
+  event.preventDefault();
+
+  var oregonPlaces = new myPlaces("Oregon", "2005", "Very Cool", "Pioneer Square");
+
+  $("#show-place").show();
+  $("ul#show-list").append("<li><span class='place'>" + oregonPlaces.placeIveBeen() + "</span></li>");
+});
+
+
 });
