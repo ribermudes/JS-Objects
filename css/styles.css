@@ -6,6 +6,10 @@
   display: none;
 }
 
+/*.show-todo-list {
+  display: none;
+}*/
+
 .contact {
   cursor: pointer;
   color: #0088cc;

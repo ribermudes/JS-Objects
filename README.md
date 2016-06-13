@@ -7,9 +7,10 @@
 ## Description
 
 
-Behavior                  Input | Output
+Behavior                |  Input | Output
 ------------------------| ------------ | -------------
 Input form where users can add a task | "task one" | "task one"
+Display a task in a "To Do" list  | "go fish" | To Do: go fish
 Input form where users can add a second task | "task one" | ("task one", "task two")
 Each task is added to a list that contains multiple tasks | ("clean", "sleep") | 1. clean; 2. sleep
 User can indicate when a task is done | clean [ ] | clean [x]

@@ -3,7 +3,7 @@
   <head>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>Intro to Programming Object-Oriented JavaScript Practice: Address Book, Places You've Been and To Do</title>
+    <title>TO DO LIST - Intro to Programming Object-Oriented JavaScript Practice: Address Book, Places You've Been and To Do</title>
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/todo.js"></script>
   </head>
@@ -20,8 +20,32 @@
       </ul>
 
       <h1>To Do - Week Four: New Project</h1>
-      <
 
+      <form id="form-task" class="form-horizontal">
+        <div class="form-group">
+          <label for="input-task">Task</label>
+          <input id="input-task" class="form-control" type="text">
+        </div>
+
+        <button id="button-task" type="submit" class="btn btn-default" value="Submit">Submit</button>
+      </form>
+
+      <div id="show-tasks">
+        <h2></h2>
+          <ul class="show-todo-list">
+            <li><span class="task"></span></li>
+
+          </ul>
+      </div>
+
+      <!-- <div id="show-contact">
+        <h2></h2>
+        <p>First name: <span class="first-name"></span></p>
+        <p>Last name: <span class="last-name"></span></p>
+        <p>Street: <span class="new-street"></span></p>
+        <p>City: <span class="new-city"></span></p>
+        <p>State: <span class="new-state"></span></p>
+      </div> -->
     </div>
   </body>
 </html>
