@@ -1,26 +1,30 @@
-# _{Application Name}_
+# _Address Book, Places You've Been and To Do_
 
-#### _{Brief description of application}, Jne 13, 2016_
+#### _Intro to Programming Object-Oriented JavaScript Practice: Address Book, Places You've Been and To Do, Jne 13, 2016_
 
-#### By _**Noah Yasskin and **_
+#### By _** Noah Yasskin and Bang Nguyen **_
 
 ## Description
 
-_{Intro to Programming Object-Oriented JavaScript Practice: Address Book, Places You've Been and To Do}_
+
+Behavior                  Input | Output
+------------------------| ------------ | -------------
+Input form where users can add a task | "task one" | "task one"
+Input form where users can add a second task | "task one" | ("task one", "task two")
+Each task is added to a list that contains multiple tasks | ("clean", "sleep") | 1. clean; 2. sleep
+User can indicate when a task is done | clean [ ] | clean [x]
+User can remove a task from the list | clean | [-----]
+List is easy to read | (task 1, 2, 3) | "Task One: Clean", "Task Two: Sleep" ...]
+
+
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* _This simple program should run in most Web browsers_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_No know bugs_
 
 ## Support and contact details
 
