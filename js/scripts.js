@@ -1,3 +1,12 @@
+// ADDRESS BOOK
+
+function Contact(first, last) {
+  this.firstName = first;
+  this.lastName = last;
+}
+var ada = new Contact("Ada", "Lovelace");
+
+
 // Business (or back-end) logic:
 
 

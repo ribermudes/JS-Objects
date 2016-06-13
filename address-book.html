@@ -3,24 +3,79 @@
   <head>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>Intro to Programming Object-Oriented JavaScript Practice: Address Book, Places You've Been and To Do</title>
     <script src="js/jquery-1.12.4.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/address.js"></script>
+    <title>Address book</title>
   </head>
   <body>
     <div class="container">
       <div class="page-header">
-        <h1>Navs</h1>
+        <h1>Intro to Programming Object-Oriented JavaScript Practice: Address Book</h1>
       </div>
       <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#">Home</a></li>
-        <li role="presentation"><a href="#">Address Book</a></li>
-        <li role="presentation"><a href="#">Places You've Been</a></li>
-        <li role="presentation"><a href="#">To Do</a></li>
+        <li role="presentation"><a href="index.html">Home</a></li>
+        <li role="presentation" class="active"><a href="address-book.html">Address Book</a></li>
+        <li role="presentation"><a href="places.html">Places You've Been</a></li>
+        <li role="presentation"><a href="to-do.html">To Do</a></li>
       </ul>
 
-      <h1>Week Four: New Projects</h1>
+      <h1>Address book</h1>
 
+      <div class="row">
+
+        <div class="col-md-6">
+          <h2>Add a contact:</h2>
+          <form id="new-contact">
+            <div class="form-group">
+              <label for="new-first-name">First name</label>
+              <input type="text" class="form-control" id="new-first-name">
+            </div>
+            <div class="form-group">
+              <label for="new-last-name">Last name</label>
+              <input type="text" class="form-control" id="new-last-name">
+            </div>
+
+            <div id="new-addresses">
+              <div class="new-address">
+                <div class="form-group">
+                  <label for="new-street">Street</label>
+                  <input type="text" class="form-control new-street">
+                </div>
+                <div class="form-group">
+                  <label for="new-city">City</label>
+                  <input type="text" class="form-control new-city">
+                </div>
+                <div class="form-group">
+                  <label for="new-state">State</label>
+                  <input type="text" class="form-control new-state">
+                </div>
+              </div>
+            </div>
+
+            <span class="btn btn-primary" id="add-address">Another address</span>
+
+            <button type="submit" class="btn">Add</button>
+          </form>
+
+          <h2>Contacts:</h2>
+          <ul id="contacts">
+
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <div id="show-contact">
+            <h2></h2>
+            <p>First name: <span class="first-name"></span></p>
+            <p>Last name: <span class="last-name"></span></p>
+            <p>Addresses:</p>
+            <ul id="addresses">
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </div>
   </body>
 </html>
