@@ -10,6 +10,14 @@
   display: none;
 }
 
+#tickets-output {
+  display: none;
+}
+
+#tickets {
+  padding: 15px;
+}
+
 .contact {
   cursor: pointer;
   color: #0088cc;

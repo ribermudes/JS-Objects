@@ -21,69 +21,38 @@
         <li role="presentation" class="active"><a href="movie-tickets.html">Movie Tickets</a></li>
       </ul>
 
-      <form id ="tickets" >
+      <form id="tickets">
+        <div class="feature">
+          <select class="form-control" id="film-choices">
+            <option value=10>Dr. Strangelove</option>
+            <option value=5>Clockwork Orange</option>
+            <option value=5>2001: A Space Odyssey</option>
+          </select>
+        </div>
+         <p>&nbsp;</p>
 
+        <div class="time">
+          <select class="form-control" id="time-choices">
+            <option value=5>Matinee</option>
+            <option value=10>Evening</option>
+          </select>
+        </div>
+        <p>&nbsp;</p>
 
-      <div class="features">
-        <h1>Features</h1>
-      <div class="radio">
-        <label>
-          <input type="radio" name="features" id="features1" value="option1" checked>
-          Dr. Strangelove
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="features" id="features2" value="option2">
-          Clockwork Orange
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="features" id="features3" value="option3">
-          2001: A Space Odyssey
-        </label>
-      </div>
-    </div>
-
-    <div class="time">
-      <h1>Time</h1>
-    <div class="radio">
-      <label>
-        <input type="radio" name="time" id="time1" value="option1" checked>
-        Matinee
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="time" id="time2" value="option2">
-        Evening
-      </label>
-    </div>
-  </div>
-
-  <div class="age">
-    <h1>Select Your Age</h1>
-  <div class="radio">
-    <label>
-      <input type="radio" name="age" id="age1" value="option1" checked>
-      Below 18
-    </label>
-  </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="age" id="age2" value="option2">
-      18 or older
-    </label>
-  </div>
- </div>
+        <div class="age">
+          <select class="form-control" id="age-choices">
+            <option value = -2>Under 18</option>
+            <option value = 0>Over 18</option>
+            <option value = -5>Senior: Over 65</option>
+          </select>
+        </div>
+        <p>&nbsp;</p>
+        <button type="submit" class="btn">Ticket Price</button>
       </form>
- <div class="cost">
-   <h1>Price</h1>
 
- </div>
+      <div id="tickets-output">
+      </div>
 
-  </div>
-
+    </div>
   </body>
 </html>
