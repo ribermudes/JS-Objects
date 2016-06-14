@@ -5,7 +5,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Bank Account - Intro to Programming Object-Oriented JavaScript Practice: Address Book, Places You've Been, To Do, Movie Tickets, and Bank Account</title>
     <script src="js/jquery-1.12.4.js"></script>
-    <script src="js/accounts.js"></script>
+    <script src="js/account.js"></script>
   </head>
   <body>
     <div class="container">
@@ -21,8 +21,49 @@
         <li role="presentation"><a href="movie-tickets.html">Movie Tickets</a></li>
       </ul>
 
-      <h1>Week Four: New Projects</h1>
+      <div class="row">
+       <div class="col-md-6">
+         <form id="bank-account">
 
+           <h1>Register a new account:</h1>
+           <div class="form-group">
+             <label for="new-name">Name</label>
+             <input id="new-name" type="text" class="form-control">
+           </div>
+
+           <div class="form-group">
+             <label for="initial-deposit">Initial Deposit</label>
+             <input id="initial-deposit" type="number" min="0" class="form-control">
+           </div>
+           <button id="new-account" type="submit" class="btn">Initial Setup</button>
+
+           <div class="row">
+             <div class="col-md-6">
+               <h1>Deposit or withdraw funds:</h1>
+             <div class="form-group">
+               <label for="new-deposit">New Deposit</label>
+               <input id="new-deposit" type="number" min="0" class="form-control">
+             </div>
+             <button id="new-deposit-button" type="submit" class="btn">Add New Deposit</button>
+
+             <div class="form-group">
+               <label for="new-withdrawl">Withdrawal</label>
+               <input id="new-withdrawl" type="number" min="0" class="form-control">
+             </div>
+             <button id="new-withdrawl-button" type="submit" class="btn">Withdrawl</button>
+
+          </form>
+
+
+          <h1>Current Balance</h1>
+          <span id="current-balance"></span>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
     </div>
+
   </body>
 </html>
