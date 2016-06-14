@@ -6,9 +6,9 @@
   display: none;
 }
 
-/*.show-todo-list {
+#show-tasks {
   display: none;
-}*/
+}
 
 .contact {
   cursor: pointer;

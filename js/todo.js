@@ -1,15 +1,13 @@
 // Business logic - Back-end logic
 
-function ToDoList(task) {
+function ToDoList(task, date) {
   this.newTask = task;
-  console.log(this.newTask);
+  this.newDate = date;
 };
 
-
-
-// ToDoList.prototype.allTasks = function () {
-//   return this.newTask1 + " " + this.newTask2 + " " + this.newTask3;
-// }
+ToDoList.prototype.addDate = function () {
+  return this.newTask + " " + this.newDate;
+}
 
 // User Interface logic or Front-end logic
 $(document).ready(function () {
@@ -17,25 +15,15 @@ $(document).ready(function () {
     event.preventDefault();
 
     var inputtedTask = $("input#input-task").val();
+    var inputtedDate = $("input#input-date").val();
 
-    var newToDoList = new ToDoList(inputtedTask);
+    var newToDoList = new ToDoList(inputtedTask, inputtedDate);
 
-    console.log(newToDoList);
+    $("ul.show-todo-list").append("<li><span class='show-todo-list'>" + newToDoList.newTask + " on " + newToDoList.newDate + "$( "<li>" ).last().addClass( "checkbox" ); " + "</span></li>");
+    $("#show-tasks").show();
+    $("show-tasks h2").text();
 
-    $("ul.show-todo-list").prepend("<li><span class='show-todo-list'>" + newToDoList.newTask + "</span></li>");
-    // });
-
-    // newToDoList.forEach(function (task) {
-    // $("ul#show-todo-list").append("<li>" + task + "</li>");
-    // });
-
-
-    // $(".todo-item").last().click(function() {
-    //   $(".show-tasks").show();
-    //   $("show-tasks h2").text(newToDoList.task);
     //
-    // });
-
-    $("input#input-task").val("");
+    // $("input#input-task").val("");
   });
 });
